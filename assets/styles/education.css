@@ -1,0 +1,22 @@
+.education {
+    grid-column: 1/2;
+}
+ 
+.education__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media(max-width: 630px) {
+    .education {
+        grid-column: 2/3;
+    }
+}
+
+@media(max-width: 480px) {
+    .education {
+        grid-column: 1/3;
+        grid-row: 9/10;
+    }
+}

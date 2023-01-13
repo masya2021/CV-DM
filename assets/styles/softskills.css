@@ -1,0 +1,11 @@
+.softskills {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+@media(max-width: 480px) {
+    .softskills {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+}

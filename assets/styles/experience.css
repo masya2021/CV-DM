@@ -1,0 +1,10 @@
+.experience {
+    grid-row: 3/4;
+}
+
+@media(max-width: 480px) {
+    .experience {
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+}

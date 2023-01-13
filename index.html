@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My CV</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/svg/logoheader.svg" type="image/svg+xml">
+
+    <!-- fonts -->
+    <link rel="preload" href="./assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Inika.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Inika-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- scripts -->
+    <script src="script.js" defer></script>
+
+    <style>
+        :root {
+            --bg-main-color: #80808014;
+            --bg-header-color: #8080802e;
+            --text-title-color: #636060;
+            --active-color: #E06733;
+            --github-svg-color: #00654E;
+            --burgerline-main-color: #D37912;
+            --burgerline-additional-color: #D31812;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+
+            <button class="burger header__burger">
+                <span class="burger__line"></span>
+            </button>
+
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#hero" class="navigation__link">Hero</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contacts" class="navigation__link">Contacts</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#languages" class="navigation__link">Languages</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#skills" class="navigation__link">HardSkills</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#education" class="navigation__link">Education</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#project" class="navigation__link">Project</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#softskills" class="navigation__link">SoftSkills</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <section class="hero" id="hero">
+                <div class="container hero__container">
+
+                    <div class="hero__description">
+                        <h1 class="hero__title">Yuri <span>Hortov</span></h1>
+                        <p class="hero__position">Junior Frontend Developer</p>
+                    </div>
+
+                    <div class="hero__image">
+                        <img class="hero__item" src="assets/images/heros.jpg" alt="image hero" width="250" height="250">
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="contacts" id="contacts">
+                <div class="container contacts__container">
+
+                    <h2 class="contacts__title title">Contacts</h2>
+
+                    <ul class="contacts__list">
+                        <li class="location size">
+                            <img src="./assets/icons/travelmaplocationpin_109805.svg" alt="telegram__icon" width="40"
+                                height="40" class="icon">
+                            <a class="map"
+                                href="https://yandex.ru/maps/?um=constructor%3Ac46c2e06dd0a866b16218b0a6a8c1f2e8313e5a96fa4492c09b19e4b71ef57f9&source=constructorLink"
+                                target="blank">Belarus,&nbsp;Minsk</a>
+                        </li>
+
+                        <li class="email size">
+                            <img src="./assets/icons/gmail_button_icon_151848.svg" alt="viber__icon" width="78"
+                                height="40" class="icon">
+                            <a href="mailto:yuhortov@gmail.com">yuhortov@gmail.com</a>
+                        </li>
+
+                        <li class="phone size">
+                            <img src="./assets/icons/ic_call_end_128_28144.svg" alt="phone__icon" width="40" height="40"
+                                class="icon">
+                            <a href="tel:+375445485539" class="contact__mobile footer__item footer__link">+375 (44) 548
+                                55
+                                39</a>
+                        </li>
+
+                        <li class="social">
+                            <a href="https://t.me/azarro87" class="telegram-link" target="_blank">
+                                <img src="./assets/icons/telegram_logo_icon_168691.svg" alt="telegram__icon" width="78"
+                                    height="40" class="social__telegram"></a>
+                            <a href="viber://chat?number=%2B375445485539" class="viber-link" target="_blank">
+                                <img src="./assets/icons/viber_logo_icon_169264.svg" alt="viber__icon" width="56"
+                                    height="32" class="social__icon"></a>
+                            <a href="https://linkedin.com/in/yura-hortov" class="viber-link" target="_blank">
+                                <img src="./assets/icons/linkedin_logo_icon_171224.svg" alt="viber__icon" width="78"
+                                    height="32" class="social__icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="softskills" id="softskills">
+                <div class="container softskills__container">
+                    <h2 class="softskills__title title">Soft Skills</h2>
+                    <ul class="softskills__list list">
+                        <li>Learning and development, willingness to learn</li>
+                        <li>Sociability</li>
+                        <li>Stress resistance, sense of humor</li>
+                        <li>Perseverance, reliability</li>
+                        <li>Performance, punctuality</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="languages" id="languages">
+                <div class="container languages__container">
+
+                    <h2 class="languages__title title">Languages</h2>
+                    <ul class="languages__list list">
+                        <li> Belarusian </li>
+                        <li> English (A2 in progress) </li>
+                        <li> Russian </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="hardskills" id="skills">
+                <div class="container hardskills__container">
+                    <h2 class="hardskills__title title">Hard Skills</h2>
+                    <ul class="hardskills__list list">
+                        <li>HTML
+                        </li>
+                        <li>CSS, SCSS
+                        </li>
+                        <li>JavaScript
+                        </li>
+                        <li>Figma, Photoshop
+                        </li>
+                        <li>Flex, Grid
+                        </li>
+                        <li>GitHub
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container about__container">
+                    <h2 class="about__title title">About Me</h2>
+                    <p class="about__description">I am a beginner frontend developer. Ready to learn and develop in this
+                        direction.</p>
+                    <p class="about__description">To Work in a friendly team using modern technologies such as React,
+                        TypeScript and others.</p>
+                    <p class="about__description">I am a hardworking, motivated, goal oriented person. I have a great
+                        desire to gain new knowledge, experience and further delve into this area</p>
+                </div>
+            </section>
+
+            <section class="education" id="education">
+                <div class="container education__container">
+
+                    <h2 class="education__title title">Education</h2>
+                    <p class="description__text">
+                        <span class="description__text-title">BNTU</span>
+                        <br>
+                        <span class="description__text-year">2008-2014</span> - with a specialty: automated electric
+                        drive</p>
+                    <p class="description__text">
+                        <span class="description__text-title">courses at RSSchool</span>
+                        <br>
+                        <span class="description__text-year">2022 - to present </span> - JavaScript/Front-end Developer
+                    </p>
+                </div>
+            </section>
+
+            <section class="experience" id="experience">
+                <div class="container experience__container">
+                    <h2 class="experience__title title">Experience</h2>
+
+                    <ul class="experience__list list">
+                        <li>Front-end Developer Course | 2022</li>
+                        <li>created adaptive layouts using HTML, CSS,
+                            SCSS and Figma;</li>
+                        <li>created projects on JavaScript;</li>
+                        <li>completed logical tasks on Codewars;</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="project" id="project">
+                <div class="container project__container">
+
+                    <h2 class="project__title title">My Projects</h2>
+                    <div class="project__slider">
+                        <div class="project__list">
+
+                            <div class="list__item">
+                                <span class="list__name">Travel</span>
+                                <a href="https://rolling-scopes-school.github.io/masya2021-JSFEPRESCHOOL2022Q2/travel/"
+                                    class="list__link" target="_blank">
+                                    <img src="assets/images/projects/Travel.jpg" alt="nice mountains with button login">
+                                </a>
+                            </div>
+
+                            <div class="list__item">
+                                <span class="list__name">WAYup</span>
+                                <a href="https://masya2021.github.io/Webpage/" class="list__link" target="_blank">
+                                    <img src="assets/images/projects/wayup.png" alt="wayup">
+                                </a>
+                            </div>
+
+                            <div class="list__item">
+                                <span class="list__name">Portfolio</span>
+                                <a href="https://masya2021.github.io/Portfolio/" class="list__link" target="_blank">
+                                    <img src="assets/images/projects/portfolio.jpg" alt="photographer__women">
+                                </a>
+                            </div>
+
+                            <div class="list__item">
+                                <span class="list__name">Museum</span>
+                                <a href="https://masya2021.github.io/museum/" class="list__link" target="_blank">
+                                    <img src="assets/images/projects/museum.jpg" alt="louvre">
+                                </a>
+                            </div>
+
+                            <div class="list__item">
+                                <span class="list__name">SomeThing</span>
+                                <a href="https://masya2021.github.io/Something/" class="list__link" target="_blank">
+                                    <img src="assets/images/projects/something.png" alt="man at the computer ">
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <span class="arrowleft"></span>
+                        
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+
+            <div class="footer__data copyrights">
+                <p class="copyrights__symbol">© Y. Hortov</p>
+                <p class="copyrights__year">2023</p>
+                <p class="copyrights__github github">
+                    <a href="https://github.com/masya2021" class="github__svglink">
+                        <svg class="github__image" version="1.0" xmlns="http://www.w3.org/2000/svg" width="60"
+                            height="60" viewbox="0 0 60 60">
+                            <g transform="translate(0.000000,60.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                stroke="none">
+                                <path
+                                    d="M203 582 c-215 -77 -271 -349 -103 -506 38 -36 105 -76 126 -76 2 0 4 23 4 50 0 46 -2 50 -24 50 -15 0 -37 15 -62 42 -33 36 -36 43 -20 46 10 2 32 -9 50 -27 38 -37 50 -38 63 -9 9 20 5 24 -37 44 -72 33 -96 97 -65 171 8 19 15 50 15 68 0 43 6 47 47 30 20 -8 66 -15 103 -15 37 0 83 7 103 15 41 17 47 13 47 -30 0 -18 7 -49 15 -68 31 -75 7 -138 -66 -172 -36 -16 -45 -25 -38 -36 5 -8 9 -47 9 -86 0 -40 2 -73 4 -73 21 0 88 40 126 76 66 62 94 128 94 224 1 85 -20 142 -73 203 -72 81 -213 117 -318 79z"
+                                    fill="currentColor" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/masya2021" class="github__link" target="blank"> GitHub</a></p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
