@@ -7,20 +7,8 @@
     margin: 0 auto;
 }
 
-@media(max-width: 1200px) {
-   
-}
-
-@media(max-width: 1000px) {
-
-}
-
 @media(max-width: 800px) {
    .wrapper {
        grid-template-columns: repeat(2, 6fr);
    }
-}
-
-@media(max-width: 580px) {
-   
 }

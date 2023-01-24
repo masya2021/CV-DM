@@ -69,4 +69,7 @@
       --height: 20px;
       --size-line: 2px;
   }
+  .lock {
+    overflow: hidden;
+  }
 }

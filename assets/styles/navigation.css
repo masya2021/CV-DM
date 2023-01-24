@@ -1,29 +1,20 @@
-
 .navigation__list {
     padding: 0 45px;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
     gap: 15px;
     list-style: none;
 }
 
-.navigation__item:not(:nth-child(1)) {
+.navigation__item {
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 50px;
-    color: #010201;
+    color: var(--nav-color);
     letter-spacing: 0.01em;
-    /* transition: 0.3s ease-in-out; */
-}
-
-.navigation__item {
-    font-family: 'Inika';
-    font-weight: 700;
-    color: var(--active-color);
 }
 
 .navigation__item:hover {
@@ -39,9 +30,6 @@
      .navigation_active {
        display: block;
        min-height: 100vh;
+       padding-top: 52px;
     }
-}
-
-@media(max-width: 580px) {
-   
 }

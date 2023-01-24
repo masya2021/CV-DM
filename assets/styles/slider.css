@@ -1,0 +1,87 @@
+.project__slider {
+    padding: 0 20px;
+}
+
+.lists {
+    position: relative;
+}
+
+.lists__container {
+    width: inherit;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.arrow {
+    display: block;
+    position: absolute;
+    --width: 30px;
+    --height: 30px;
+    top: calc(50% - 12.5px);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+.arrowleft {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    background-color: transparent;
+    border-top: 2px solid var(--border-arrow-color);
+    border-right: 2px solid var(--border-arrow-color);
+    border-left: none;
+    right: -5%;
+    transform: rotate(45deg);
+}
+
+.arrowright {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    background-color: transparent;
+    border-top: 2px solid var(--border-arrow-color);
+    border-left: 2px solid var(--border-arrow-color);
+    border-right: none;
+    outline: none;
+    left: -7%;
+    transform: rotate(-45deg);
+}
+
+.arrowleft:hover{
+    transition: 0.35s ease-in-out;
+    border-top: 2px solid var(--text-title-color);
+    border-right: 2px solid var(--text-title-color);
+}
+
+.arrowright:hover {
+    transition: 0.35s ease-in-out;
+    border-top: 2px solid var(--text-title-color);
+    border-left: 2px solid var(--text-title-color);
+} 
+
+@media(max-width: 1000px) {
+    .arrow {
+        --width: 24px;
+        --height: 24px;
+    }
+}
+
+@media(max-width: 800px) {
+    .arrow {
+        --width: 15px;
+        --height: 15px;
+    }
+}
+
+@media(max-width: 630px) {
+    .arrow {
+        --width: 26px;
+        --height: 26px;
+    }
+}
+
+@media(max-width: 480px) {
+    .arrow {
+        --width: 16px;
+        --height: 16px;
+    }
+}

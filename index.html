@@ -8,19 +8,19 @@
 
     <title>My CV</title>
 
-    <!-- favicon -->
+
     <link rel="icon" href="./assets/svg/logoheader.svg" type="image/svg+xml">
 
-    <!-- fonts -->
+
     <link rel="preload" href="./assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/Inika.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/Inika-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- style -->
+
     <link rel="stylesheet" href="style.css">
 
-    <!-- scripts -->
+
     <script src="script.js" defer></script>
 
     <style>
@@ -29,9 +29,13 @@
             --bg-header-color: #8080802e;
             --text-title-color: #636060;
             --active-color: #E06733;
+            --nav-color: #010201;
             --github-svg-color: #00654E;
             --burgerline-main-color: #D37912;
             --burgerline-additional-color: #D31812;
+            --border-arrow-color: #B0DBA7;
+            --bg-projects-color: #EDF2EC;
+            --hover-projects-color: #D6E7D2;
         }
     </style>
 </head>
@@ -114,7 +118,7 @@
                         <li class="phone size">
                             <img src="./assets/icons/ic_call_end_128_28144.svg" alt="phone__icon" width="40" height="40"
                                 class="icon">
-                            <a href="tel:+375445485539" class="contact__mobile footer__item footer__link">+375 (44) 548
+                            <a href="tel:+375445485539" class="phone__mobile">+375 (44) 548
                                 55
                                 39</a>
                         </li>
@@ -194,7 +198,7 @@
             </section>
 
             <section class="education" id="education">
-                <div class="container education__container">
+                <div class="container education__container description">
 
                     <h2 class="education__title title">Education</h2>
                     <p class="description__text">
@@ -229,48 +233,55 @@
 
                     <h2 class="project__title title">My Projects</h2>
                     <div class="project__slider">
-                        <div class="project__list">
 
-                            <div class="list__item">
-                                <span class="list__name">Travel</span>
-                                <a href="https://rolling-scopes-school.github.io/masya2021-JSFEPRESCHOOL2022Q2/travel/"
-                                    class="list__link" target="_blank">
-                                    <img src="assets/images/projects/Travel.jpg" alt="nice mountains with button login">
-                                </a>
-                            </div>
+                        <div class="project__list lists">
 
-                            <div class="list__item">
-                                <span class="list__name">WAYup</span>
-                                <a href="https://masya2021.github.io/Webpage/" class="list__link" target="_blank">
-                                    <img src="assets/images/projects/wayup.png" alt="wayup">
-                                </a>
-                            </div>
+                            <ul class="lists__container">
+                                <li class="lists__item active" data-slide="0">
+                                    <span class="lists__name">Travel</span>
+                                    <a href="https://rolling-scopes-school.github.io/masya2021-JSFEPRESCHOOL2022Q2/travel/"
+                                        class="lists__link" target="_blank">
+                                        <img src="assets/images/projects/Travel.jpg"
+                                            alt="nice mountains with button login">
+                                    </a>
+                                </li>
 
-                            <div class="list__item">
-                                <span class="list__name">Portfolio</span>
-                                <a href="https://masya2021.github.io/Portfolio/" class="list__link" target="_blank">
-                                    <img src="assets/images/projects/portfolio.jpg" alt="photographer__women">
-                                </a>
-                            </div>
+                                <li class="lists__item" data-slide="1">
+                                    <span class="lists__name">WAYup</span>
+                                    <a href="https://masya2021.github.io/Webpage/" class="lists__link" target="_blank">
+                                        <img src="assets/images/projects/wayup.png" alt="wayup">
+                                    </a>
+                                </li>
 
-                            <div class="list__item">
-                                <span class="list__name">Museum</span>
-                                <a href="https://masya2021.github.io/museum/" class="list__link" target="_blank">
-                                    <img src="assets/images/projects/museum.jpg" alt="louvre">
-                                </a>
-                            </div>
+                                <li class="lists__item" data-slide="2">
+                                    <span class="lists__name">Portfolio</span>
+                                    <a href="https://masya2021.github.io/Portfolio/" class="lists__link"
+                                        target="_blank">
+                                        <img src="assets/images/projects/portfolio.jpg" alt="photographer__women">
+                                    </a>
+                                </li>
 
-                            <div class="list__item">
-                                <span class="list__name">SomeThing</span>
-                                <a href="https://masya2021.github.io/Something/" class="list__link" target="_blank">
-                                    <img src="assets/images/projects/something.png" alt="man at the computer ">
-                                </a>
-                            </div>
+                                <li class="lists__item" data-slide="3">
+                                    <span class="lists__name">Museum</span>
+                                    <a href="https://masya2021.github.io/museum/" class="lists__link" target="_blank">
+                                        <img src="assets/images/projects/museum.jpg" alt="louvre">
+                                    </a>
+                                </li>
+
+                                <li class="lists__item" data-slide="4">
+                                    <span class="lists__name">SomeThing</span>
+                                    <a href="https://masya2021.github.io/Something/" class="lists__link"
+                                        target="_blank">
+                                        <img src="assets/images/projects/something.png" alt="man at the computer ">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <button class="arrow arrowleft"></button>
+                            <button class="arrow arrowright"></button>
 
                         </div>
 
-                        <span class="arrowleft"></span>
-                        
                     </div>
 
                 </div>
@@ -288,8 +299,8 @@
                 <p class="copyrights__year">2023</p>
                 <p class="copyrights__github github">
                     <a href="https://github.com/masya2021" class="github__svglink">
-                        <svg class="github__image" version="1.0" xmlns="http://www.w3.org/2000/svg" width="60"
-                            height="60" viewbox="0 0 60 60">
+                        <svg class="github__image" xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                            viewbox="0 0 60 60">
                             <g transform="translate(0.000000,60.000000) scale(0.100000,-0.100000)" fill="#000000"
                                 stroke="none">
                                 <path
